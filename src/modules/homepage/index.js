@@ -35,11 +35,11 @@ class Homepage extends React.Component {
             <>
                 <h1>Pokemon</h1>
                 <div>
-                    {/*{*/}
-                    {/*this.state.data.results.map((pokemon, i) => {*/}
-                    {/*return <div key={i}>{pokemon.name}</div>*/}
-                    {/*})*/}
-                    {/*}*/}
+                    {
+                        this.state.data.results.map((pokemon, i) => {
+                            return <div key={i}>{pokemon.name}</div>
+                        })
+                    }
                 </div>
             </>
         )
