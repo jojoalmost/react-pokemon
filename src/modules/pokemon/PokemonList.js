@@ -32,7 +32,7 @@ class PokemonList extends Component {
         return (
             <div className='row mt-3'>
                 {this.state.data.results.map((pokemon, i) => {
-                    return <PokemonCard name={pokemon.name} url={pokemon.url}></PokemonCard>
+                    return <PokemonCard key={i} name={pokemon.name} url={pokemon.url}></PokemonCard>
                 })}
             </div>
         );
