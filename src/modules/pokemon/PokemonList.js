@@ -30,11 +30,16 @@ class PokemonList extends Component {
 
     render() {
         return (
-            <div className='row mt-3'>
-                {this.state.data.results.map((pokemon, i) => {
-                    return <PokemonCard key={i} name={pokemon.name} url={pokemon.url}></PokemonCard>
-                })}
-            </div>
+            <>
+                <div className='row mt-3'>
+                    {this.state.data.results.map((pokemon, i) => {
+                        return <PokemonCard key={i} name={pokemon.name} url={pokemon.url}/>
+                    })}
+                </div>
+                <div className='row'>
+
+                </div>
+            </>
         );
     }
 }

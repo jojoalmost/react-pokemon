@@ -7,9 +7,9 @@ import Dashboard from "./components/layout/Dashboard";
 function App() {
     return (
         <div className="App">
-            <NavBar></NavBar>
+            <NavBar/>
             <Container fluid="true">
-                <Dashboard></Dashboard>
+                <Dashboard/>
             </Container>
         </div>
     );
